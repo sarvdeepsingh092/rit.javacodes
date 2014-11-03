@@ -137,5 +137,29 @@ class Socket extends Thread{
 	
 	ArrayList<Integer> socketList=new ArrayList<Integer>(35);
 	
+	Object so;
+	
+	public Socket(Object so){
+		this.so=so;
+	}
+	
+	public void run(){
+		synchronized(so){
+			if(socketList.size()<35 && socketList.size()%7==0){
+				so.notify();
+				while(socketList.size()!=35){
+					socketList.add(1);
+				}
+			}
+			else{
+				try{
+				so.wait();
+			}
+				catch(Exception e){
+					
+				}
+		}
+		}
+	}
 }
 
