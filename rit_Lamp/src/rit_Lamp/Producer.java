@@ -14,7 +14,7 @@ class Consumer{
 
 class Screw extends Thread{
 	
-	ArrayList<Integer> screw=new ArrayList<Integer>(20);
+	ArrayList<Integer> screwList=new ArrayList<Integer>(20);
 	
 	Object s;
 	
@@ -24,10 +24,10 @@ class Screw extends Thread{
 	
 	public void run(){
 		synchronized(s){
-		if(screw.size()<20&& screw.size()%4==0){
+		if(screwList.size()<20&& screwList.size()%4==0){
 			s.notify();
-			while(screw.size()!=20){
-				screw.add(1);
+			while(screwList.size()!=20){
+				screwList.add(1);
 			}
 		}
 			else{
@@ -45,7 +45,7 @@ class Screw extends Thread{
 
 class Base extends Thread{
 	
-	ArrayList<Integer> base=new ArrayList<Integer>(10);
+	ArrayList<Integer> baseList=new ArrayList<Integer>(10);
 	
 	Object b;
 	
@@ -55,10 +55,10 @@ class Base extends Thread{
 	
 	public void run(){
 		synchronized(b){
-			if(base.size()<10 && base.size()%2==0){
+			if(baseList.size()<10 && baseList.size()%2==0){
 				b.notify();
-				while(base.size()!=10){
-					base.add(1);
+				while(baseList.size()!=10){
+					baseList.add(1);
 				}
 			}
 			else{
@@ -75,7 +75,7 @@ class Base extends Thread{
 
 class LightBulb extends Thread{
 	
-	ArrayList<Integer> lightBulb=new ArrayList<Integer>(20);
+	ArrayList<Integer> lightBulbList=new ArrayList<Integer>(20);
 	
 	Object l;
 	
@@ -85,10 +85,10 @@ class LightBulb extends Thread{
 	
 	public void run(){
 		synchronized(l){
-			if(lightBulb.size()<20 && lightBulb.size()%4==0){
+			if(lightBulbList.size()<20 && lightBulbList.size()%4==0){
 				l.notify();
-				while(lightBulb.size()!=20){
-					lightBulb.add(1);
+				while(lightBulbList.size()!=20){
+					lightBulbList.add(1);
 				}
 			}
 			else{
@@ -105,7 +105,7 @@ class LightBulb extends Thread{
 
 class Stand extends Thread{
 	
-	ArrayList<Integer> stand=new ArrayList<Integer>(20);
+	ArrayList<Integer> standList=new ArrayList<Integer>(20);
 	
 	Object S;
 	
@@ -115,10 +115,10 @@ class Stand extends Thread{
 	
 	public void run(){
 		synchronized(S){
-			if(stand.size()<20 && stand.size()%4==0){
+			if(standList.size()<20 && standList.size()%4==0){
 				S.notify();
-				while(stand.size()!=20){
-					stand.add(1);
+				while(standList .size()!=20){
+					standList.add(1);
 				}
 			}
 			else{
@@ -135,7 +135,7 @@ class Stand extends Thread{
 
 class Socket extends Thread{
 	
-	ArrayList<Integer> socket=new ArrayList<Integer>(35);
+	ArrayList<Integer> socketList=new ArrayList<Integer>(35);
 	
 }
 
