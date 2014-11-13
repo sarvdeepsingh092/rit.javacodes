@@ -124,7 +124,7 @@ class Consumer extends Thread {
 					} else {
 						try {
 
-							System.out.println("starting production");
+							//System.out.println("starting production");
 
 							//invoke the producers
 							screw.start();

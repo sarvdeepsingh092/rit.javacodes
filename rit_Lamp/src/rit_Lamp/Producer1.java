@@ -35,7 +35,8 @@ public class Producer1 {
 		c3.start();
 		c4.start();
 
-
+		
+		
 	}
 
 }
@@ -51,6 +52,7 @@ class Consumer1 extends Thread {
 	//declare a counter variable to run the run function that many times
 	static int counter = 10;
 	
+	static int count=0;
 	//create reference of the Consumer
 	Consumer1 o;
 	
@@ -103,8 +105,9 @@ class Consumer1 extends Thread {
 							&& LightBulb1.countLB >= 4 && Stand1.countStand >= 4) {
 						
 						//if yes then lamp is created
-						System.out.println("Lamp created");
-
+						
+						count++;
+						System.out.println("Lamp "+count+" created");
 						//remove those many items from the producers count
 						for (int i = 0; i < 4; i++) {
 							Screw1.countScrew--;
@@ -129,8 +132,7 @@ class Consumer1 extends Thread {
 					} else {
 						try {
 
-							System.out.println("starting production");
-
+							
 							//invoke the producers
 							screw.start();
 							base.start();
