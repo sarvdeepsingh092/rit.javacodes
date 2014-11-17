@@ -178,10 +178,12 @@ public class Calculate extends JFrame implements ActionListener {
 		btnConvert_1 = new JButton("Convert");
 		btnConvert_1.addActionListener(this);
 		
+		//create the spinner for the input
 		 spinner = new JSpinner();
 		 JFormattedTextField ft=((JSpinner.DefaultEditor)spinner.getEditor()).getTextField();
 		 ft.setEditable(false);
 		
+		 //create the spinner for the input
 		spinner_1 = new JSpinner();
 		JFormattedTextField ft1=((JSpinner.DefaultEditor)spinner.getEditor()).getTextField();
 		ft1.setEditable(false);
@@ -272,10 +274,12 @@ public class Calculate extends JFrame implements ActionListener {
 		btnConvert_3 = new JButton("Convert");
 		btnConvert_3.addActionListener(this);
 		
+		//create the spinner for input
 		spinner_2 = new JSpinner();
 		JFormattedTextField ft2=((JSpinner.DefaultEditor)spinner_2.getEditor()).getTextField();
 		ft2.setEditable(false);
 		
+		//create the spinner for input
 		spinner_3 = new JSpinner();
 		JFormattedTextField ft3=((JSpinner.DefaultEditor)spinner_3.getEditor()).getTextField();
 		ft3.setEditable(false);
@@ -364,10 +368,13 @@ public class Calculate extends JFrame implements ActionListener {
 		btnConvert_5 = new JButton("Convert");
 		btnConvert_5.addActionListener(this);
 		
+		
+		//create the spinner for input
 		spinner_4 = new JSpinner();
 		JFormattedTextField ft4=((JSpinner.DefaultEditor)spinner_4.getEditor()).getTextField();
 		ft4.setEditable(false);
 		
+		//create the spinner for input
 		spinner_5 = new JSpinner();
 		JFormattedTextField ft5=((JSpinner.DefaultEditor)spinner_5.getEditor()).getTextField();
 		ft5.setEditable(false);
@@ -458,10 +465,12 @@ public class Calculate extends JFrame implements ActionListener {
 		btnConvert_7 = new JButton("Convert");
 		btnConvert_7.addActionListener(this);
 		
+		//create the spinner for the input
 		spinner_6 = new JSpinner();
 		JFormattedTextField ft6=((JSpinner.DefaultEditor)spinner_6.getEditor()).getTextField();
 		ft6.setEditable(false);
 		
+		//create the spinner for the input
 		spinner_7 = new JSpinner();
 		JFormattedTextField ft7=((JSpinner.DefaultEditor)spinner_7.getEditor()).getTextField();
 		ft7.setEditable(false);
