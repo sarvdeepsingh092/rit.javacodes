@@ -102,7 +102,7 @@ public class MandelbrotZoom extends JFrame implements MouseListener, MouseMotion
 	public void paint(Graphics g) {
 
 		//call the method to draw the image on the window
-		g.drawImage(I, 0, 0, w, h, this);
+		g.drawImage(I, 0, 0, 800, 800, this);
 
 	}
 
@@ -159,9 +159,7 @@ public class MandelbrotZoom extends JFrame implements MouseListener, MouseMotion
 		//copy the image in the rectangle generated into the BufferedImage
 		I = I.getSubimage(clickX, clickY, w, h);
 		
-		//set the bounds of the window
-		setBounds(100, 100, w, h);
-
+		
 		//call the paint method
 		repaint();
 
