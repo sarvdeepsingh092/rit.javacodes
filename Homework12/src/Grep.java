@@ -18,6 +18,7 @@ import java.io.*;
  */
 public class Grep {
 
+	public static int counter=0;
 	/**
 	 * main program
 	 * @param args		command line arguments(ignored)
@@ -26,7 +27,7 @@ public class Grep {
 	public static void main(String args[]) throws IOException {
 
 		try {
-			//declare and initialze the string in which the word to be searched will be read
+			//declare and initialize the string in which the word to be searched will be read
 			String searchWord = "";
 			
 			//declare the buffered reader
@@ -42,6 +43,8 @@ public class Grep {
 
 			//call the method which would check for the words presence
 			grep(file, searchWord);
+			
+			System.out.println("The word "+searchWord+" appears "+counter+" times in the file.");
 		} catch (FileNotFoundException e) {
 			System.out.println("The file was not found");
 		}
@@ -66,6 +69,7 @@ public class Grep {
 			//use a flag to indicate that the word has been found
 			int flag = 0;
 			
+			
 			//read the first line of the file
 			input = reader1.readLine();
 			
@@ -78,9 +82,14 @@ public class Grep {
 					//if yes change the value of the flag
 					flag = 1;
 					
+					//increment the counter
+					counter++;
+					
 					//print the line in which the word is present
+					System.out.println("The string in which the word is present is as follows :");
 					System.out.println(input);
 				}
+				
 				
 				//read the next line in the file
 				input = reader1.readLine();
