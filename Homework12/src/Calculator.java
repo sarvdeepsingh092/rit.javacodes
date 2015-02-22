@@ -15,9 +15,12 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
 import java.awt.*;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JTabbedPane;
@@ -26,6 +29,8 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JButton;
 
+import java.awt.event.MouseListener;
+
 
 /**
  * This class generates the interface for all the conversions
@@ -33,7 +38,7 @@ import javax.swing.JButton;
  * @author Sumedha Singh
  *
  */
-public class Calculator extends JFrame implements ActionListener {
+public class Calculator extends JFrame implements ActionListener, MouseListener {
 
 	//declare the components needed for the interface to be complete
 	private JPanel contentPane;
@@ -42,45 +47,46 @@ public class Calculator extends JFrame implements ActionListener {
 	private JPanel panel_2;
 	private JPanel panel_3;
 	private JLabel lblInches;
-	private JTextField textField;
+	public JTextField textField;
 	private JLabel lblMeters;
-	private JTextField textField_1;
+	public JTextField textField_1;
 	private JButton btnConvert;
 	private JLabel lblMeter;
-	private JTextField textField_2;
+	public JTextField textField_2;
 	private JLabel lblInches_1;
-	private JTextField textField_3;
+	public JTextField textField_3;
 	private JButton btnConvert_1;
 	private JLabel lblKmh;
-	private JTextField textField_4;
+	public JTextField textField_4;
 	private JLabel lblMPH;
-	private JTextField textField_5;
+	public JTextField textField_5;
 	private JLabel lblMph;
-	private JTextField textField_6;
+	public JTextField textField_6;
 	private JLabel lblkmh_2;
-	private JTextField textField_7;
+	public JTextField textField_7;
 	private JButton btnConvert_2;
 	private JButton btnConvert_3;
 	private JLabel lblKms;
-	private JTextField textField_8;
+	public JTextField textField_8;
 	private JLabel lblLightYears;
-	private JTextField textField_9;
+	public JTextField textField_9;
 	private JButton btnConvert_4;
 	private JLabel lblLightYears_1;
-	private JTextField textField_10;
+	public JTextField textField_10;
 	private JLabel lblKms_1;
-	private JTextField textField_11;
+	public JTextField textField_11;
 	private JButton btnConvert_5;
 	private JLabel lblCelsius;
-	private JTextField textField_12;
+	public JTextField textField_12;
 	private JLabel lblFarenheit;
-	private JTextField textField_13;
+	public JTextField textField_13;
 	private JButton btnConvert_6;
 	private JLabel lblFarenheit_1;
-	private JTextField textField_14;
+	public JTextField textField_14;
 	private JLabel lblCelsius_1;
-	private JTextField textField_15;
+	public JTextField textField_15;
 	private JButton btnConvert_7;
+	public static Calculator frame;
 	
 	
 	/**
@@ -91,7 +97,7 @@ public class Calculator extends JFrame implements ActionListener {
 			public void run() {
 				try {
 					//create the instance of the calculator class
-					Calculator frame = new Calculator();
+					frame = new Calculator();
 					
 					//set the visibility of the window to true
 					frame.setVisible(true);
@@ -146,6 +152,7 @@ public class Calculator extends JFrame implements ActionListener {
 		//create the text field
 		textField = new JTextField();
 		textField.setColumns(10);
+		
 		
 		//create the label
 		lblMeters = new JLabel("Meters :");
@@ -203,7 +210,7 @@ public class Calculator extends JFrame implements ActionListener {
 							.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 								.addComponent(btnConvert_1)
 								.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
-					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addContainerGap(15, Short.MAX_VALUE))
 		);
 		gl_panel.setVerticalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
@@ -517,6 +524,8 @@ public class Calculator extends JFrame implements ActionListener {
 				
 				
 				if(src==btnConvert){
+					
+					
 					//take the input for inches from the text field
 					String inches=textField.getText();
 					
@@ -748,6 +757,37 @@ public class Calculator extends JFrame implements ActionListener {
 					}
 					
 				}
+				
+		
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 }
