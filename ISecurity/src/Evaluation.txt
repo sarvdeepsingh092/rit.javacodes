@@ -1,0 +1,10 @@
+System is not password protected. The user should protect the system by setting up a password.
+The OS version is up-to-date.
+The file rights alloted are perfect.
+Last Access time: 2015-06-29T18:54:08Z
+Last Modified time: 2013-10-16T20:27:24Z
+Is a Directory? false
+is a regular file? true
+size of the file: 646680 bytes
+file does not have signature
+please scan /Users/sunnyb/Downloads path with your antivirus software

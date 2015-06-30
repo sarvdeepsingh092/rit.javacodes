@@ -1,0 +1,24 @@
+
+System is password protected.The password has a good strength
+The account login time has been analysed and the status seems to be OK.
+The OS version is up-to-date.
+The file rights alloted are perfect.
+Last Access time: 2015-06-22T22:14:43Z
+Last Modified time: 2013-10-16T20:27:24Z
+Is a Directory? false
+is a regular file? true
+size of the file: 646680 bytes
+file does not have signature
+please scan /Users/sunnyb/Desktop path with your antivirus software
+
+System is password protected.The password has a good strength
+The account login time has been analysed and the status seems to be OK.
+The OS version is up-to-date.
+The file rights alloted are perfect.
+Last Access time: 2015-06-22T22:16:00Z
+Last Modified time: 2013-10-16T20:27:24Z
+Is a Directory? false
+is a regular file? true
+size of the file: 646680 bytes
+file does not have signature
+please scan /Users/sunnyb/Desktop path with your antivirus software
